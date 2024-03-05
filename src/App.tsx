@@ -1,10 +1,16 @@
-import React from 'react';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainLayout from "./components/layout/MainLayout";
+import { routes } from "./routes";
 
 function App() {
   return (
-    <div className="App"> Workflow Builder
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          {routes}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
