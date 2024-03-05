@@ -23,26 +23,26 @@ const appRoutes: RouteType[] = [
     },
   },
   {
-    path: "/inputNodes",
+    path: "/inputData",
     element: <ComponentPageLayout />,
     state: "inputNode",
     sidebarProps: {
-      displayText: "Input Node",
+      displayText: "Input Data",
       icon: <AppsOutlinedIcon />,
     },
     child: [
       {
-        path: "/inputNodes/alert",
+        path: "/inputData/alert",
         element: <AlertPage />,
-        state: "inputNodes.alert",
+        state: "inputData.alert",
         sidebarProps: {
           displayText: "Alert",
         },
       },
       {
-        path: "/inputNodes/button",
+        path: "/inputData/button",
         element: <ButtonPage />,
-        state: "inputNodes.button",
+        state: "inputData.button",
         sidebarProps: {
           displayText: "Button",
         },
